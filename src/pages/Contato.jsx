@@ -22,12 +22,12 @@ export default function Contato() {
             <span className={styles.label}>Instagram</span>
             {/* REPLACE WITH OFFICIAL INSTAGRAM HANDLE */}
             <a
-              href="https://instagram.com/pulp"
+              href="https://instagram.com/selo.pulp"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.value}
             >
-              @pulp
+              @selo.pulp
             </a>
           </li>
 

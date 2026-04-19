@@ -21,13 +21,12 @@ export default function Footer() {
         <div className={styles.col + ' ' + styles.colRight}>
           {/* REPLACE WITH OFFICIAL INSTAGRAM HANDLE */}
           <a
-            href="https://instagram.com/pulp"
+            href="https://instagram.com/selo.pulp"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}
           >
-            @pulp
-          </a>
+            @selo.pulp</a>
           {/* REPLACE WITH OFFICIAL EMAIL */}
           <a href="mailto:contato@selopulp.com.br" className={styles.socialLink}>
             contato@selopulp.com.br

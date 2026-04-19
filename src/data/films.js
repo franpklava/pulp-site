@@ -116,7 +116,12 @@ export const films = [
     directorPhotoAlt: 'Foto de Nathalie Costa',
     directorBio:
       'Nathalie Costa, de 23 anos, é uma diretora e roteirista que atualmente vive em Brasília (DF). Produzido ainda durante a faculdade de Cinema, o curta-metragem "INSANIAM" marca sua estreia como diretora-autora. Nathalie também assina o roteiro do "Além da Culpa", curta-metragem premiado nos festivais CinePride (Melhor Fotografia e Inovação), AGIFF (Melhor Filme) e Queens World Film Festival (Melhor Curta-metragem LGBTQ+); e, recentemente, vem atuando como assistente de direção em produções brasilienses. Movida a se desafiar criativamente, procura desenvolver projetos que alimentem sua veia artística, explorando narrativas e vivências capazes de despertar identificação.',
-    stills: [null, null, null],
+    stills: [
+      '/stills/insaniam/still-1.jpg',
+      '/stills/insaniam/still-2.jpg',
+      '/stills/insaniam/still-3.jpg',
+      '/stills/insaniam/still-4.jpg',
+    ],
   },
   {
     slug: 'brasifilia',
