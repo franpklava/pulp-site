@@ -1,7 +1,7 @@
 // ─── Film Data ───
-// To add poster images: place files in /public/posters/ and update the posterSrc field.
-// To add director photos: place files in /public/directors/ and update the directorPhotoSrc field.
-// To add still images: place files in /public/stills/[slug]/ and update the stills array.
+// Posters: /public/posters/
+// Director photos: /public/directors/
+// Still images: /public/stills/[slug]/ — add paths to stills arrays when available
 
 export const films = [
   {
@@ -12,8 +12,7 @@ export const films = [
     format: 'Curta-metragem',
     formatKey: 'curta',
     duration: '13 min',
-    // REPLACE WITH POSTER IMAGE: place file at /public/posters/o-ridiculo.jpg
-    posterSrc: null,
+    posterSrc: '/posters/o-ridiculo.png',
     posterAlt: 'Cartaz do filme O Ridículo',
     sinopse:
       'Rebeldes na superfície, retrógradas em essência, "Os Ridicularistas", dupla composta pelo excêntrico e explosivo "O Ridículo" e pelo seu fiel escudeiro, "O Falador", vagam pela capital brasileira invadindo residências, cometendo assassinatos, enquanto criam uma legião de seguidores cegos ao longo do percurso.',
@@ -45,12 +44,10 @@ export const films = [
     ],
     directorLabel: 'Sobre o Diretor',
     directorName: 'Francenilton Klava',
-    // REPLACE WITH DIRECTOR PHOTO: place file at /public/directors/francenilton-klava.jpg
-    directorPhotoSrc: null,
+    directorPhotoSrc: '/directors/francenilton-klava.jpg',
     directorPhotoAlt: 'Foto de Francenilton Klava',
     directorBio:
       'Francenilton Klava é diretor, roteirista e produtor audiovisual formado em Cinema e Mídias Digitais pelo IESB. Estreou na direção com o curta "O Ridículo" (2024), obra de sua autoria que conquistou circulação nacional em importantes circuitos, como a 4ª Mostra do Filme Marginal (RJ), o Festival DESVER (MS), a 23ª MAUAL, o Festival Beta e a 21ª Mostra do Filme Livre, com sessões nos CCBBs de Brasília, Rio de Janeiro e São Paulo. Sua atuação versátil se estende a outras produções independentes, como "Âmago" e "INSANIAM", nas quais acumulou funções de produção, montagem e cor, além de experiências na docência e no desenvolvimento narrativo. Atualmente, desenvolve seu primeiro longa-metragem, "Brasifilia", consolidando um repertório artístico pautado pela pesquisa da cultura brasileira e pela linguagem disruptiva.',
-    // REPLACE WITH STILL IMAGES: place files at /public/stills/o-ridiculo/still-1.jpg, still-2.jpg, still-3.jpg
     stills: [null, null, null],
   },
   {
@@ -61,8 +58,7 @@ export const films = [
     format: 'Curta-metragem',
     formatKey: 'curta',
     duration: '18 min',
-    // REPLACE WITH POSTER IMAGE: place file at /public/posters/vinte-vinte-quatro.jpg
-    posterSrc: null,
+    posterSrc: '/posters/vinte-vinte-quatro.png',
     posterAlt: 'Cartaz do filme VINTE VINTE QUATRO',
     sinopse:
       'Em uma unidade de internação socioeducativa, cinco jovens em conflito com a lei planejam seu próprio filme como forma de dar sentido ao tempo sob encarceramento. Através de um processo híbrido que mescla documentário e ficção, VINTE VINTE QUATRO dissolve a realidade de crime e confinamento na adolescência em uma experiência sensorial, explorando a rebeldia, o tédio e os vestígios de ternura em um espaço marcado pelo abandono.',
@@ -83,12 +79,10 @@ export const films = [
     ],
     directorLabel: 'Sobre o Diretor',
     directorName: 'Davi Pieri',
-    // REPLACE WITH DIRECTOR PHOTO: place file at /public/directors/davi-pieri.jpg
-    directorPhotoSrc: null,
+    directorPhotoSrc: '/directors/davi-pieri.jpg',
     directorPhotoAlt: 'Foto de Davi Pieri',
     directorBio:
       'Diretor, ator e roteirista. Graduando em Audiovisual (UnB) e membro da companhia de teatro Cia YinsPiração. Integra o Nesp-UnB, trabalhando com internos de unidades socioeducativas do DF a partir das técnicas de Teatro do Oprimido. Com esta experiência, realizou seu Trabalho de Conclusão de Curso, intitulado "POR UM CINEMATÓGRAFO DO OPRIMIDO: A práxis da etnoficção no filme VINTE VINTE QUATRO".',
-    // REPLACE WITH STILL IMAGES: place files at /public/stills/vinte-vinte-quatro/still-1.jpg, still-2.jpg, still-3.jpg
     stills: [null, null, null],
   },
   {
@@ -100,8 +94,7 @@ export const films = [
     formatKey: 'curta',
     duration: '13 min',
     status: 'Em distribuição',
-    // REPLACE WITH POSTER IMAGE: place file at /public/posters/insaniam.jpg
-    posterSrc: null,
+    posterSrc: '/posters/insaniam.png',
     posterAlt: 'Cartaz do filme INSANIAM',
     sinopse:
       'Elena, uma artista obcecada que sonha em algum dia aparecer nas telonas de Hollywood, se vê lentamente perdendo sua sanidade conforme espera a ligação que pode mudar o rumo de sua vida.',
@@ -119,12 +112,10 @@ export const films = [
     festivais: [],
     directorLabel: 'Sobre a Diretora',
     directorName: 'Nathalie Costa',
-    // REPLACE WITH DIRECTOR PHOTO: place file at /public/directors/nathalie-costa.jpg
-    directorPhotoSrc: null,
+    directorPhotoSrc: '/directors/nathalie-costa.jpg',
     directorPhotoAlt: 'Foto de Nathalie Costa',
     directorBio:
       'Nathalie Costa, de 23 anos, é uma diretora e roteirista que atualmente vive em Brasília (DF). Produzido ainda durante a faculdade de Cinema, o curta-metragem "INSANIAM" marca sua estreia como diretora-autora. Nathalie também assina o roteiro do "Além da Culpa", curta-metragem premiado nos festivais CinePride (Melhor Fotografia e Inovação), AGIFF (Melhor Filme) e Queens World Film Festival (Melhor Curta-metragem LGBTQ+); e, recentemente, vem atuando como assistente de direção em produções brasilienses. Movida a se desafiar criativamente, procura desenvolver projetos que alimentem sua veia artística, explorando narrativas e vivências capazes de despertar identificação.',
-    // REPLACE WITH STILL IMAGES: place files at /public/stills/insaniam/still-1.jpg, still-2.jpg, still-3.jpg
     stills: [null, null, null],
   },
   {
@@ -136,8 +127,7 @@ export const films = [
     formatKey: 'longa',
     duration: '76 min',
     status: 'Em distribuição',
-    // REPLACE WITH POSTER IMAGE: place file at /public/posters/brasifilia.jpg
-    posterSrc: null,
+    posterSrc: '/posters/brasifilia.png',
     posterAlt: 'Cartaz do filme Brasifilia',
     sinopse:
       'Um filme ensaio em que três jovens, ao desenterrar um arquivo clandestino do cinema nacional, mergulham num delírio dadaísta-terceiro-mundista. Entre imagens proibidas e memórias pessoais, devoram a técnica, explodem a narrativa e implodem a própria ideia de Brasil.',
@@ -156,12 +146,10 @@ export const films = [
     festivais: [],
     directorLabel: 'Sobre o Diretor',
     directorName: 'Francenilton Klava',
-    // REPLACE WITH DIRECTOR PHOTO: place file at /public/directors/francenilton-klava.jpg
-    directorPhotoSrc: null,
+    directorPhotoSrc: '/directors/francenilton-klava.jpg',
     directorPhotoAlt: 'Foto de Francenilton Klava',
     directorBio:
       'Francenilton Klava é diretor, roteirista e produtor audiovisual formado em Cinema e Mídias Digitais pelo IESB. Estreou na direção com o curta "O Ridículo" (2024), obra de sua autoria que conquistou circulação nacional em importantes circuitos, como a 4ª Mostra do Filme Marginal (RJ), o Festival DESVER (MS), a 23ª MAUAL, o Festival Beta e a 21ª Mostra do Filme Livre, com sessões nos CCBBs de Brasília, Rio de Janeiro e São Paulo. Sua atuação versátil se estende a outras produções independentes, como "Âmago" e "INSANIAM", nas quais acumulou funções de produção, montagem e cor, além de experiências na docência e no desenvolvimento narrativo. Atualmente, desenvolve seu primeiro longa-metragem, "Brasifilia", consolidando um repertório artístico pautado pela pesquisa da cultura brasileira e pela linguagem disruptiva.',
-    // REPLACE WITH STILL IMAGES: place files at /public/stills/brasifilia/still-1.jpg, still-2.jpg, still-3.jpg
     stills: [null, null, null],
   },
   {
@@ -173,8 +161,7 @@ export const films = [
     formatKey: 'curta',
     duration: '15 min',
     status: 'Em pós-produção',
-    // REPLACE WITH POSTER IMAGE: place file at /public/posters/amago.jpg
-    posterSrc: null,
+    posterSrc: '/posters/amago.png',
     posterAlt: 'Cartaz do filme Âmago',
     sinopse:
       'Em uma noite, Elisa se depara com a natureza da relação que cultivou com seu pai e suas consequências ao escrever o discurso fúnebre para seu velório.',
@@ -193,12 +180,10 @@ export const films = [
     festivais: [],
     directorLabel: 'Sobre a Diretora',
     directorName: 'Thalita Lemos',
-    // REPLACE WITH DIRECTOR PHOTO: place file at /public/directors/thalita-lemos.jpg
-    directorPhotoSrc: null,
+    directorPhotoSrc: '/directors/thalita-lemos.jpg',
     directorPhotoAlt: 'Foto de Thalita Lemos',
     directorBio:
       'Thalita Lemos é diretora de arte e cenógrafa, recém-formada em Cinema e Mídias Digitais pelo IESB. Com formação anterior em Artes Visuais (UFMS), especializou-se na criação de universos visuais autorais, atuando como diretora de arte em projetos como "INSANIAM" (2024), "Brasifília" (2024), "Cambre" (2023). Sua atuação abrange figurino, produção de objetos, maquiagem e cabelo, além de experiência como assistente de arte em longas como "Onde Moram os Irmãos" (2023) e "Marcos e Arnaldo" (2025). Dirigiu e roteirizou o curta "Âmago" (2024), consolidando um portfólio diverso e focado em narrativas visuais impactantes.',
-    // REPLACE WITH STILL IMAGES: place files at /public/stills/amago/still-1.jpg, still-2.jpg, still-3.jpg
     stills: [null, null, null],
   },
 ]

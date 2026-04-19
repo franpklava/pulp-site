@@ -37,15 +37,9 @@ export default function Sobre() {
             capturar e transmitir os sinais que o mundo emite, compreensíveis ou não.
           </p>
           <p>
-            Acreditamos que o cinema contemporâneo, ao se tornar excessivamente
-            institucional, perdeu a conexão com o pulso cultural de sua época.
             Existimos para ser uma antena sintonizada no zeitgeist de uma geração
-            que navega num oceano de referências passadas — devorando
+            que navega num oceano de referências passadas, devorando
             intertextualidades e cuspindo-as em novas formas.
-          </p>
-          <p>
-            Em nossa hierarquia criativa, o filme e seu autor vêm sempre em
-            primeiro lugar. A produtora é o suporte, não a estrela.
           </p>
         </div>
 

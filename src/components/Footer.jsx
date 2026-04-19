@@ -6,10 +6,8 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.col}>
-          {/* REPLACE WITH VERTICAL LOGO IMAGE
-              <img src="/logos/logo-vertical.png" alt="pulp." className={styles.logoImg} />
-          */}
-          <span className={styles.logoText}>pulp.</span>
+          {/* LOGO: vertical */}
+          <img src="/logos/logo-vertical.png" alt="pulp." className={styles.logoImg} />
         </div>
 
         <nav className={styles.col + ' ' + styles.colCenter}>

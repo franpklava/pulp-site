@@ -1,0 +1,149 @@
+/* ─── Stills Grid ─── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.stillWrapper {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+
+.stillWrapper:hover .stillImg {
+  opacity: 0.75;
+  transform: scale(1.02);
+}
+
+.stillImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.25s ease, transform 0.35s ease;
+}
+
+.stillPlaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-800);
+  border: 1px dashed var(--gray-600);
+}
+
+/* ─── Lightbox Overlay ─── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.imageWrapper {
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightboxImg {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
+  animation: zoomIn 0.2s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.96); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+/* ─── Close Button ─── */
+.closeBtn {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.75rem;
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  color: var(--gray-400);
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.5rem;
+  transition: color 0.2s ease;
+  z-index: 1001;
+}
+
+.closeBtn:hover {
+  color: var(--white);
+}
+
+/* ─── Counter ─── */
+.counter {
+  position: fixed;
+  top: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  letter-spacing: 0.1em;
+  z-index: 1001;
+}
+
+/* ─── Nav Buttons ─── */
+.navBtn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  color: var(--gray-400);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  transition: color 0.2s ease;
+  z-index: 1001;
+  line-height: 1;
+}
+
+.navBtn:hover {
+  color: var(--white);
+}
+
+.navPrev {
+  left: 1.5rem;
+}
+
+.navNext {
+  right: 1.5rem;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navPrev { left: 0.5rem; }
+  .navNext { right: 0.5rem; }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

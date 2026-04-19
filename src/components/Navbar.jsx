@@ -6,10 +6,8 @@ export default function Navbar() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <Link to="/" className={styles.logo}>
-          {/* REPLACE WITH LOGO IMAGE (horizontal wordmark)
-              <img src="/logos/logo-wordmark.png" alt="pulp." className={styles.logoImg} />
-          */}
-          <span className={styles.logoText}>pulp.</span>
+          {/* LOGO: wordmark */}
+          <img src="/logos/logo-wordmark.png" alt="pulp." className={styles.logoImg} />
         </Link>
         <ul className={styles.links}>
           <li>

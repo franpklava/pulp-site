@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { films } from '../data/films'
+import Lightbox from '../components/Lightbox'
 import styles from './FilmPage.module.css'
 
 export default function FilmPage() {
@@ -110,22 +111,7 @@ export default function FilmPage() {
         {/* Stills */}
         <section className={styles.section}>
           <h2 className={styles.sectionHeading}>Stills</h2>
-          <div className={styles.stillsGrid}>
-            {film.stills.map((src, i) => (
-              <div key={i} className={styles.stillWrapper}>
-                {src ? (
-                  <img
-                    src={src}
-                    alt={`Still ${i + 1} — ${film.titleDisplay}`}
-                    className={styles.stillImg}
-                  />
-                ) : (
-                  /* REPLACE WITH STILL IMAGES: update stills array in src/data/films.js */
-                  <div className={styles.stillPlaceholder} />
-                )}
-              </div>
-            ))}
-          </div>
+          <Lightbox stills={film.stills} filmTitle={film.titleDisplay} />
         </section>
 
       </div>
