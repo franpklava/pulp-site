@@ -38,9 +38,13 @@
 }
 
 .logoImg {
-  height: 64px;
+  height: auto;
   width: auto;
+  max-height: 56px;
+  max-width: 160px;
   mix-blend-mode: screen;
+  display: block;
+  object-fit: contain;
 }
 
 .navLinks {

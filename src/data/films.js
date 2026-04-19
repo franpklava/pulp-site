@@ -83,7 +83,12 @@ export const films = [
     directorPhotoAlt: 'Foto de Davi Pieri',
     directorBio:
       'Diretor, ator e roteirista. Graduando em Audiovisual (UnB) e membro da companhia de teatro Cia YinsPiração. Integra o Nesp-UnB, trabalhando com internos de unidades socioeducativas do DF a partir das técnicas de Teatro do Oprimido. Com esta experiência, realizou seu Trabalho de Conclusão de Curso, intitulado "POR UM CINEMATÓGRAFO DO OPRIMIDO: A práxis da etnoficção no filme VINTE VINTE QUATRO".',
-    stills: [null, null, null],
+        stills: [
+      '/stills/vinte-vinte-quatro/still-1.jpg',
+      '/stills/vinte-vinte-quatro/still-2.jpg',
+      '/stills/vinte-vinte-quatro/still-3.jpg',
+      '/stills/vinte-vinte-quatro/still-4.jpg',
+    ],
   },
   {
     slug: 'insaniam',
@@ -121,6 +126,8 @@ export const films = [
       '/stills/insaniam/still-2.jpg',
       '/stills/insaniam/still-3.jpg',
       '/stills/insaniam/still-4.jpg',
+      '/stills/insaniam/still-5.jpg',
+      '/stills/insaniam/still-6.jpg',
     ],
   },
   {
@@ -189,6 +196,13 @@ export const films = [
     directorPhotoAlt: 'Foto de Thalita Lemos',
     directorBio:
       'Thalita Lemos é diretora de arte e cenógrafa, recém-formada em Cinema e Mídias Digitais pelo IESB. Com formação anterior em Artes Visuais (UFMS), especializou-se na criação de universos visuais autorais, atuando como diretora de arte em projetos como "INSANIAM" (2024), "Brasifília" (2024), "Cambre" (2023). Sua atuação abrange figurino, produção de objetos, maquiagem e cabelo, além de experiência como assistente de arte em longas como "Onde Moram os Irmãos" (2023) e "Marcos e Arnaldo" (2025). Dirigiu e roteirizou o curta "Âmago" (2024), consolidando um portfólio diverso e focado em narrativas visuais impactantes.',
-    stills: [null, null, null],
+        stills: [
+      '/stills/amago/still-1.jpg',
+      '/stills/amago/still-2.jpg',
+      '/stills/amago/still-3.jpg',
+      '/stills/amago/still-4.jpg',
+      '/stills/amago/still-5.jpg',
+      '/stills/amago/still-6.jpg',
+    ],
   },
 ]
