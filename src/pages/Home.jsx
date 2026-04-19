@@ -21,7 +21,12 @@ export default function Home() {
     <main className={styles.main}>
       {/* Hero */}
       <section className={styles.hero}>
-        <h1 className={styles.heroWordmark}>pulp.</h1>
+        {/* LOGO: vertical (antena + pulp.) */}
+        <img
+          src="/logos/logo-vertical.png"
+          alt="pulp."
+          className={styles.heroLogo}
+        />
         <p className={styles.heroTagline}>Um selo cinematográfico do Distrito Federal.</p>
       </section>
 

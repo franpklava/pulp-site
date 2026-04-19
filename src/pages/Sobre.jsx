@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Sobre.module.css'
 
 export default function Sobre() {
@@ -7,19 +8,11 @@ export default function Sobre() {
 
         {/* Team photo */}
         <div className={styles.photoBlock}>
-          {/* REPLACE WITH TEAM PHOTO: place file at /public/team/equipe-brasifilia.jpg
-              Then replace the placeholder div below with:
-              <img
-                src="/team/equipe-brasifilia.jpg"
-                alt="Equipe pulp. no Cine Brasília"
-                className={styles.teamPhoto}
-              />
-          */}
-          <div className={styles.photoPlaceholder}>
-            <span className={styles.photoPlaceholderLabel}>
-              foto da equipe no Cine Brasília
-            </span>
-          </div>
+          <img
+            src="/team/equipe.jpg"
+            alt="Equipe pulp. no Cine Brasília"
+            className={styles.teamPhoto}
+          />
         </div>
 
         {/* Pull quote */}
@@ -45,9 +38,9 @@ export default function Sobre() {
 
         {/* Contact CTA */}
         <div className={styles.cta}>
-          <a href="/contato" className={styles.ctaLink}>
+          <Link to="/contato" className={styles.ctaLink}>
             Entre em contato →
-          </a>
+          </Link>
         </div>
 
       </div>

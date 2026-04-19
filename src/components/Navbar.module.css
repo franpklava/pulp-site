@@ -31,6 +31,7 @@
 .logoImg {
   height: 36px;
   width: auto;
+  mix-blend-mode: screen;
 }
 
 .links {

@@ -12,14 +12,11 @@
   margin-bottom: 4rem;
 }
 
-.heroWordmark {
-  font-family: var(--font-sans);
-  font-size: clamp(4rem, 12vw, 9rem);
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: -0.04em;
-  line-height: 1;
-  margin-bottom: 1.25rem;
+.heroLogo {
+  height: clamp(160px, 25vw, 260px);
+  width: auto;
+  mix-blend-mode: screen;
+  margin-bottom: 1.5rem;
 }
 
 .heroTagline {
