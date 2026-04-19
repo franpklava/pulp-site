@@ -1,0 +1,319 @@
+.main {
+  padding: 3rem 2rem 8rem;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ─── Back ─── */
+.back {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--gray-400);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  transition: color 0.2s ease;
+}
+
+.back:hover {
+  color: var(--white);
+}
+
+/* ─── Top: poster + info ─── */
+.top {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+  margin-bottom: 5rem;
+}
+
+.posterWrapper {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.posterImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.posterPlaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-800);
+  border: 1px dashed var(--gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.placeholderLabel {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gray-400);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.topInfo {
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.status {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  border: 1px solid var(--gray-800);
+  padding: 0.25rem 0.625rem;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.meta {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  color: var(--gray-400);
+  font-style: italic;
+}
+
+/* ─── Sections ─── */
+.section {
+  padding: 3rem 0;
+  border-top: 1px solid var(--gray-800);
+}
+
+.sectionHeading {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.75rem;
+}
+
+.sectionText {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  color: var(--gray-200);
+  line-height: 1.8;
+  max-width: 65ch;
+}
+
+/* ─── Ficha Técnica ─── */
+.fichaTecnica {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.fichaRow {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--gray-800);
+}
+
+.fichaRow:last-child {
+  border-bottom: none;
+}
+
+.fichaRole {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--gray-600);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.fichaName {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  color: var(--gray-200);
+}
+
+/* ─── Festivais ─── */
+.festivais {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.festivalItem {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  color: var(--gray-200);
+  line-height: 1.5;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.festivalItem::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gray-600);
+  font-family: var(--font-sans);
+}
+
+/* ─── Director ─── */
+.directorBlock {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.directorPhotoWrapper {
+  flex-shrink: 0;
+  width: 88px;
+  height: 88px;
+}
+
+.directorPhoto {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--gray-800);
+  filter: grayscale(100%);
+}
+
+.directorPhotoPlaceholder {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--gray-800);
+  border: 1px solid var(--gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.directorInitials {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.directorInfo {
+  flex: 1;
+}
+
+.directorName {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.directorBio {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  color: var(--gray-200);
+  line-height: 1.8;
+}
+
+/* ─── Stills ─── */
+.stillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.stillWrapper {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.stillImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stillPlaceholder {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-800);
+  border: 1px dashed var(--gray-600);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .posterWrapper {
+    max-width: 280px;
+  }
+
+  .fichaRow {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .fichaRole {
+    color: var(--gray-600);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .stillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 2rem 1.25rem 5rem;
+  }
+
+  .directorBlock {
+    flex-direction: column;
+  }
+
+  .stillsGrid {
+    grid-template-columns: 1fr;
+  }
+}
